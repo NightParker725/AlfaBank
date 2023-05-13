@@ -60,6 +60,7 @@ public class HelloController implements Initializable {
         viewBTN.setOnAction(action->{
             recordsTV.setItems(RecordList.getInstance().getRecords());
             recordsTV.getSortOrder().add(dateTC);
+            dateTC.setSortType(TableColumn.SortType.DESCENDING);
         } );
 
         costViewBTN.setOnAction(action ->{
