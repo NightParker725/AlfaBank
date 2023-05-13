@@ -54,6 +54,7 @@ public class HelloController implements Initializable {
         dateTC.setCellValueFactory(new PropertyValueFactory<>("date"));
         recordsTV.setItems(RecordList.getInstance().getRecords());
         recordsTV.getSortOrder().add(dateTC);
+        dateTC.setSortType(TableColumn.SortType.DESCENDING);
         balanceLB.setText(RecordList.getInstance().getBalance());
 
 
@@ -66,11 +67,13 @@ public class HelloController implements Initializable {
         costViewBTN.setOnAction(action ->{
             recordsTV.setItems(RecordList.getInstance().getCosts());
             recordsTV.getSortOrder().add(dateTC);
+            dateTC.setSortType(TableColumn.SortType.DESCENDING);
         });
 
         incViewBTN.setOnAction(action ->{
             recordsTV.setItems(RecordList.getInstance().getIncomes());
             recordsTV.getSortOrder().add(dateTC);
+            dateTC.setSortType(TableColumn.SortType.DESCENDING);
         });
 
         homeBTN.setOnAction(action->{
