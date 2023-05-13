@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="600.0" style="-fx-background-image: url('https://cdn.vox-cdn.com/thumbor/51i7NeQdzSRm1IaSI-B-qaiNELo=/1052x107:3840x1745/1200x800/filters:focal(789x240:1403x854)/cdn.vox-cdn.com/uploads/chorus_image/image/66571506/Persona_5_Royal_20200309204840.0.jpg');" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alfabank.model.HelloController">
+   <children>
+      <TableView fx:id="recordsTV" layoutX="59.0" layoutY="54.0" prefHeight="316.0" prefWidth="485.0">
+        <columns>
+            <TableColumn fx:id="descTC" prefWidth="98.0" text="Descripcion" />
+          <TableColumn fx:id="dateTC" prefWidth="111.0" text="Fecha" />
+            <TableColumn fx:id="recordTC" minWidth="0.0" prefWidth="199.0" text="Valor/Registro" />
+            <TableColumn fx:id="typeTC" prefWidth="75.0" text="Tipo" />
+        </columns>
+      </TableView>
+      <Button fx:id="costViewBTN" layoutX="58.0" layoutY="398.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="113.0" text="Ver solo Gastos" />
+      <Button fx:id="viewBTN" layoutX="174.0" layoutY="398.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="136.0" text="Ver Ingresos/Gastos" />
+      <Button fx:id="incViewBTN" layoutX="313.0" layoutY="398.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="113.0" text="Ver solo Ingresos" />
+      <Label layoutX="151.0" text="AlfaBank Records" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="homeBTN" layoutX="429.0" layoutY="398.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="113.0" text="Ir al Inicio" />
+      <Label layoutX="59.0" layoutY="370.0" text="BALANCE:" textFill="WHITE" />
+      <Label fx:id="balanceLB" layoutX="123.0" layoutY="370.0" textFill="RED" />
+   </children>
+</AnchorPane>
